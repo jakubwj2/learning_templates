@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+{% extends 'basic_app/base.html' %} {% block body_block %}
+    <h1>Welcome to Relative URL Templates</h1>
+    <h2>These are the links to different websites from the exercise</h2>
+    <a href="{% url 'basic_app:other' %}">The other page </a><br />
+    <a href="{% url 'admin:index' %}">The admin webpage</a>
+    <a href="{% url 'index' %}">Link to index</a>
+{% endblock  %}
+
+
